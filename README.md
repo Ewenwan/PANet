@@ -1,6 +1,22 @@
-# Path Aggregation Network for Instance Segmentation
+# 实例分割 Path Aggregation Network for Instance Segmentation
 
 by [Shu Liu](http://shuliu.me), Lu Qi, Haifang Qin, [Jianping Shi](https://shijianping.me/), [Jiaya Jia](http://jiaya.me/).
+
+Mask-Rcnn的改进版本，整体思路是提高信息流在网络中的传递效率。
+
+第一个改进：
+
+为了提高低层信息的利用率，加快低层信息的传播效率，提出了Bottom-up Path Augmentation；
+
+第二个改进：
+
+通常FPN在多层进行选anchors时，根据anchors的大小，将其分配到对应的层上进行分层选取。这样做很高效，但同时也不能充分利用信息了，提出了Adaptive Feature Pooling。
+
+第三个改进：
+
+为了提高mask的生成质量，作者将卷积-上采样和全连接层进行融合，提出了Fully-connected Fusion。
+
+
 
 ### Introduction
 
