@@ -17,6 +17,11 @@ Mask-Rcnn的改进版本，整体思路是提高信息流在网络中的传递�
 为了提高mask的生成质量，作者将卷积-上采样和全连接层进行融合，提出了Fully-connected Fusion。
 
 
+香港中文大学、北京大学、商汤科技、腾讯优图在CVPR 2018发表的一篇论文，提出了一个名为PANet的实例分割框架。
+优化了Mask R-CNN中的信息传播，通过加速信息流、整合不同层级的特征，提高了生成预测蒙版的质量。
+在未经大批量训练的情况下，就拿下了COCO 2017挑战赛实例分割任务的冠军。
+
+[maskscoring_rcnn 2019改进版本](https://github.com/Ewenwan/maskscoring_rcnn)
 
 ### Introduction
 
